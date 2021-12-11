@@ -23,30 +23,34 @@ def potencia(a):
 def potenciaCubo(a):
      return a**a
 
-string("** SUMA **")
-i = 0
-end = 100
-while True: # como hacer para que sea un bucle indefinido
-     try:
-          a = int(input("Escribe un número: "))
-          b = int(input("Escribe un número: "))
-          print("La suma de {} y {} es: {}".format(a,b,suma(a,b)))
-     except:
-          print("Por favor escribe un número valido")
-     i += 1
-     break
+from decimal import Decimal
+def raizCuadrada(a):
+     return a
 
-string("** RESTA **")
-i = 0
-while True:
-     try:
-         a = int(input("Escribe un número: "))
-         b = int(input("Escribe un número: "))
-         print("La resta de {} y {} es: {}".format(a,b,resta(a,b))) 
-     except:
-          print("Por favor ingresa un entero.")
-     i += 1
-     break     
+# string("** SUMA **")
+# i = 0
+# end = 100
+# while True: # como hacer para que sea un bucle indefinido
+#      try:
+#           a = int(input("Escribe un número: "))
+#           b = int(input("Escribe un número: "))
+#           print("La suma de {} y {} es: {}".format(a,b,suma(a,b)))
+#      except:
+#           print("Por favor escribe un número valido")
+#      i += 1
+#      break
+
+# string("** RESTA **")
+# i = 0
+# while True:
+#      try:
+#          a = int(input("Escribe un número: "))
+#          b = int(input("Escribe un número: "))
+#          print("La resta de {} y {} es: {}".format(a,b,resta(a,b))) 
+#      except:
+#           print("Por favor ingresa un entero.")
+#      i += 1
+#      break     
 
 # string("** MULTIPLICACIÓN **")
 # i = 0
@@ -104,3 +108,10 @@ while True:
 #           print("Please type a number.")
 #      i = i + 1
 #      break
+
+
+string("** RAÍZ CUADRADA **")
+n = int(input("Escribe un número: "))
+a = Decimal(n)
+a = a.sqrt()
+print("El resultado de la raíz cuadrada de {} es: {}".format(n,raizCuadrada(a)))
