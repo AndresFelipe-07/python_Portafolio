@@ -1,3 +1,6 @@
+#para que me ayudes en algunas cosas como el seleccionar, como lo harias?, son ejercicios aletorios que estoy haciendo para ir aprendiendo
+# que tal te gusta?
+
 def string(a:str):
      print(a)
 
